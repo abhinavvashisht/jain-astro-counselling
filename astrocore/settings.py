@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,13 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
-SECRET_KEY = 'django-insecure-k@xb@($_a&++bv5s@7pp6v#t$h9-!+wmi0)zw=2l)019)2=9bx'
+SECRET_KEY = config('SECRET_KEY')
+# SECRET_KEY = 'django-insecure-k@xb@($_a&++bv5s@7pp6v#t$h9-!+wmi0)zw=2l)019)2=9bx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['jain-astro-counselling.onrender.com', 'localhost','127.0.0.1']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(" ")
+# ALLOWED_HOSTS = ['jain-astro-counselling.onrender.com', 'localhost','127.0.0.1']
 
 # ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
 
@@ -80,11 +82,18 @@ WSGI_APPLICATION = 'astrocore.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://ingeniousabhinav:7XmpUOShqRxaMqBJMGOutUlikmF1jnir@dpg-cu880jdds78s73a4oacg-a.oregon-postgres.render.com/astrocounselling',
+        default=config('DATABASE_URL'),
         conn_max_age=600
     )
 }
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Replace this value with your local database's connection string.
+#         default='postgresql://ingeniousabhinav:7XmpUOShqRxaMqBJMGOutUlikmF1jnir@dpg-cu880jdds78s73a4oacg-a.oregon-postgres.render.com/astrocounselling',
+#         conn_max_age=600
+#     )
+# }
 
 # DATABASES["default"] = dj_database_url.parse("postgresql://ingeniousabhinav:7XmpUOShqRxaMqBJMGOutUlikmF1jnir@dpg-cu880jdds78s73a4oacg-a.oregon-postgres.render.com/astrocounselling")
 
@@ -113,7 +122,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = config('TIME_ZONE', default='UTC')
+# TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
