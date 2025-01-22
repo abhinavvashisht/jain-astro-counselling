@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block pagetitle %}Services{% endblock pagetitle %}
+{% block services %}
+<section>
+    <div class="container">
+        <div class="row">
+            <h1 class="fw-bold text-center">Welcome to Services Page</h1>
+            <a href="/" class="text-decoration-none text-primary">Go to Home Page</a>
+        </div>
+        <div class="row">
+            {% for service in services %}
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>{{ service.service }}</h2>
+                    </div>
+                    <div class="card-body p-0"><img class="card-img" src="{{ service.image.url }}"
+                            alt="{{ service.service }}"></div>
+                    <div class="card-footer">
+                        <p>{{ service.description }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Price: ${{ service.price }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock services %}
