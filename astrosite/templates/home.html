@@ -4,317 +4,353 @@
 {% load static %}
 <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section dark-background">
 
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-        <div class="carousel-item active">
-          <img src='{% static "assets/img/hero-carousel/hero-carousel-1.jpg" %}' alt="">
-          <div class="carousel-container">
-            <h2>Welcome to Sailor<br></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
-          </div>
-        </div><!-- End Carousel Item -->
+      <div class="carousel-item active">
+        <img src='{% static "assets/img/hero-carousel/hero-carousel-1.jpg" %}' alt="">
+        <div class="carousel-container">
+          <h2>Dr. Jain’s Center for Astro-Counseling &amp; Spiritual Healing<br></h2>
+          <p>We offer a unique blend of astrological guidance and holistic counseling to promote personal growth, mental
+            well-being, and spiritual harmony.</p>
+          <a href="https://calendar.app.google/CojVy5dQp4a1WYnr5" class="btn-get-started" target="_blank">Book
+            Appointment</a>
+        </div>
+      </div><!-- End Carousel Item -->
 
-        <div class="carousel-item">
-          <img src='{% static "assets/img/hero-carousel/hero-carousel-2.jpg" %}' alt="">
-          <div class="carousel-container">
-            <h2>At vero eos et accusamus</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
-          </div>
-        </div><!-- End Carousel Item -->
+      <div class="carousel-item">
+        <img src='{% static "assets/img/hero-carousel/hero-carousel-2.jpg" %}' alt="">
+        <div class="carousel-container">
+          <h2>Astrological Guidance</h2>
+          <p>In a world full of uncertainties, finding clarity and direction can often feel overwhelming. Whether it’s
+            about your career, relationships, or personal growth, understanding the cosmic influences in your life can
+            provide profound insights.</p>
+          <a href="/services" class="btn-get-started">Get Started</a>
+        </div>
+      </div><!-- End Carousel Item -->
 
-        <div class="carousel-item">
-          <img src='{% static "assets/img/hero-carousel/hero-carousel-3.jpg" %}' alt="">
-          <div class="carousel-container">
-            <h2>Temporibus autem quibusdam</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
-          </div>
-        </div><!-- End Carousel Item -->
+      <div class="carousel-item">
+        <img src='{% static "assets/img/hero-carousel/hero-carousel-3.jpg" %}' alt="">
+        <div class="carousel-container">
+          <h2>Spiritual Healing</h2>
+          <p>In today’s chaotic world, many of us feel disconnected, overwhelmed, or burdened by emotional and spiritual
+            unrest. Spiritual Healing offers a pathway to reconnect with your inner self, release negativity, and
+            embrace a life of harmony and fulfillment.</p>
+          <a href="/services" class="btn-get-started">Get Started</a>
+        </div>
+      </div><!-- End Carousel Item -->
 
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
 
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
 
-        <ol class="carousel-indicators"></ol>
+      <ol class="carousel-indicators"></ol>
 
-      </div>
+    </div>
 
-    </section><!-- /Hero Section -->
+  </section><!-- /Hero Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+  <!-- About Section -->
+  <section id="about" class="about section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>About Us<br></p>
-      </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>About</h2>
+      <p>About Us<br></p>
+    </div><!-- End Section Title -->
 
-      <div class="container">
+    <div class="container">
 
-        <div class="row gy-4">
+      <div class="row gy-4">
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
-            </ul>
-          </div>
+        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            We provide expert counseling services blending psychology and astrology, focusing on personal growth, career
+            guidance, and life balance.
+          </p>
+          <ul>
+            <li><i class="bi bi-check2-circle"></i> <span><strong>Comprehensive Approach:</strong> Combining
+                psychological insights with astrological counseling for holistic well-being.</span></li>
+            <li><i class="bi bi-check2-circle"></i> <span><strong>Global Clientele:</strong>Specializing in catering to
+                international clients with diverse cultural and professional backgrounds.</span></li>
+            <li><i class="bi bi-check2-circle"></i> <span><strong>Expert Guidance:</strong>Over 30 years of expertise in
+                management and counseling, delivering personalized solutions.</span></li>
+          </ul>
+        </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-            <a href="/about" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <p>Our counseling services are designed to empower individuals by addressing personal, professional, and
+            emotional challenges. With a unique blend of psychological expertise and astrological insights, we guide
+            clients toward clarity, confidence, and success. Specializing in international clientele, we aim to bridge
+            cultures and provide solutions tailored to individual needs.</p>
+          <a href="/about" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
+    </div>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
+  </section><!-- /About Section -->
 
-      <div class="container" data-aos="fade-up">
+  <!-- Clients Section -->
+  <section id="clients" class="clients section light-background">
 
-        <div class="row gy-4">
+    <div class="container" data-aos="fade-up">
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src='{% static "assets/img/clients/client-1.png" %}' class="img-fluid" alt="">
-          </div><!-- End Client Item -->
+      <div class="row gy-4">
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src='{% static "assets/img/clients/client-2.png" %}' class="img-fluid" alt="">
-          </div><!-- End Client Item -->
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src='{% static "assets/img/clients/client-1.png" %}' class="img-fluid" alt="">
+        </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src='{% static "assets/img/clients/client-3.png" %}' class="img-fluid" alt="">
-          </div><!-- End Client Item -->
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src='{% static "assets/img/clients/client-2.png" %}' class="img-fluid" alt="">
+        </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src='{% static "assets/img/clients/client-4.png" %}' class="img-fluid" alt="">
-          </div><!-- End Client Item -->
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src='{% static "assets/img/clients/client-3.png" %}' class="img-fluid" alt="">
+        </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src='{% static "assets/img/clients/client-5.png" %}' class="img-fluid" alt="">
-          </div><!-- End Client Item -->
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src='{% static "assets/img/clients/client-4.png" %}' class="img-fluid" alt="">
+        </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src='{% static "assets/img/clients/client-6.png" %}' class="img-fluid" alt="">
-          </div><!-- End Client Item -->
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src='{% static "assets/img/clients/client-5.png" %}' class="img-fluid" alt="">
+        </div><!-- End Client Item -->
 
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-briefcase icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-binoculars icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src='{% static "assets/img/clients/client-6.png" %}' class="img-fluid" alt="">
+        </div><!-- End Client Item -->
 
       </div>
 
-    </section><!-- /Services Section -->
+    </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+  </section><!-- /Clients Section -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur</p>
-      </div><!-- End Section Title -->
+  <!-- Services Section -->
+  <section id="services" class="services section">
 
-      <div class="container">
+    <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <div class="row gy-4">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item d-flex position-relative h-100">
+            <i class="bi bi-briefcase icon flex-shrink-0"></i>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Astrological Guidance</a></h4>
+              <p class="description">In a world full of uncertainties, finding clarity and direction can often feel overwhelming.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item d-flex position-relative h-100">
+            <i class="bi bi-card-checklist icon flex-shrink-0"></i>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Psychological Counselling using CBT</a></h4>
+              <p class="description">In today’s fast-paced world, stress, anxiety, and emotional challenges have become increasingly common.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-1.jpg" %}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-1.jpg" %}' title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item d-flex position-relative h-100">
+            <i class="bi bi-bar-chart icon flex-shrink-0"></i>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Spiritual Healing</a></h4>
+              <p class="description">In today’s chaotic world, many of us feel disconnected, overwhelmed, or burdened by emotional and spiritual unrest.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-2.jpg" %}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-2.jpg" %}' title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item d-flex position-relative h-100">
+            <i class="bi bi-binoculars icon flex-shrink-0"></i>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Life Skills Coaching</a></h4>
+              <p class="description">In today’s ever-changing world, the ability to adapt, grow, and succeed depends not just on knowledge but on essential life skills.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-3.jpg" %}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-3.jpg" %}' title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-item d-flex position-relative h-100">
+            <i class="bi bi-brightness-high icon flex-shrink-0"></i>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Relationship Counselling</a></h4>
+              <p class="description">Healthy relationships are key to happiness, but communication gaps and conflicts can strain even the strongest bonds.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-4.jpg"%}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-4.jpg"%}' title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-5.jpg"%}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-5.jpg"%}' title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-6.jpg"%}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-6.jpg"%}' title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-7.jpg"%}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-7.jpg"%}' title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-8.jpg"%}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-8.jpg"%}' title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-9.jpg"%}' class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-9.jpg"%}' title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-item d-flex position-relative h-100">
+            <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Children and Parenting Counseling</a></h4>
+              <p class="description">Parenting is a rewarding journey, but it comes with challenges that can feel overwhelming at times.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </div>
 
-  </main>
+  </section><!-- /Services Section -->
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Portfolio</h2>
+      <p>Necessitatibus eius consequatur</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-product">Card</li>
+          <li data-filter=".filter-branding">Web</li>
+        </ul><!-- End Portfolio Filters -->
+
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-1.jpg" %}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-1.jpg" %}' title="App 1"
+                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-2.jpg" %}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Product 1</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-2.jpg" %}' title="Product 1"
+                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-3.jpg" %}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Branding 1</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-3.jpg" %}' title="Branding 1"
+                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-4.jpg"%}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-4.jpg"%}' title="App 2"
+                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-5.jpg"%}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Product 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-5.jpg"%}' title="Product 2"
+                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-6.jpg"%}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Branding 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-6.jpg"%}' title="Branding 2"
+                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-7.jpg"%}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-7.jpg"%}' title="App 3"
+                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-8.jpg"%}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Product 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-8.jpg"%}' title="Product 3"
+                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src='{% static "assets/img/masonry-portfolio/masonry-portfolio-9.jpg"%}' class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Branding 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href='{% static "assets/img/masonry-portfolio/masonry-portfolio-9.jpg"%}' title="Branding 2"
+                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+        </div><!-- End Portfolio Container -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Portfolio Section -->
+
+</main>
 {% endblock home %}
