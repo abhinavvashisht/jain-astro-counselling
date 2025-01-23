@@ -8,6 +8,24 @@ def home(request):
 def about(request):
     return render(request, 'about.html')
 
+def team(request):
+    return render(request, 'team.html')
+
+def pricing(request):
+    return render(request, 'pricing.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def portfolio(request):
+    return render(request, 'portfolio.html')
+
+def blog(request):
+    return render(request, 'blog.html')
+
+def testimonials(request):
+    return render(request, 'testimonials.html')
+
 def services(request):
     services = Service.objects.all()
     return render(request, 'services.html',{'services': services})
