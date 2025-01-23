@@ -26,6 +26,12 @@ def blog(request):
 def testimonials(request):
     return render(request, 'testimonials.html')
 
+def terms(request):
+    return render(request, 'terms-service.html')
+
+def privacypolicy(request):
+    return render(request, 'privacy-policy.html')
+
 def services(request):
     services = Service.objects.all()
     return render(request, 'services.html',{'services': services})
