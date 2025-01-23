@@ -23,6 +23,9 @@ def portfolio(request):
 def blog(request):
     return render(request, 'blog.html')
 
+def blogdetail(request):
+    return render(request, 'blog-detail.html')
+
 def testimonials(request):
     return render(request, 'testimonials.html')
 
