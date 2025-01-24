@@ -1,5 +1,6 @@
 from django.urls import path
 from .import views
+from .views import add_testimonial_view
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -14,4 +15,5 @@ urlpatterns = [
     path('testimonials/', views.testimonials, name='testimonials'),
     path('terms-service/', views.terms, name='terms'),
     path('privacy-policy/', views.privacypolicy, name='privacypolicy'),
+    path('add-testimonial/', add_testimonial_view, name='add_testimonial'),
 ]

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block pagetitle %}Add Testimonials{% endblock pagetitle %}
+{% block add_testimonials %}
+<section>
+    <div class="container">
+        <div class="row">
+            <h1>Add a Testimonial</h1>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit"
+                    style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 5px;">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock add_testimonials %}

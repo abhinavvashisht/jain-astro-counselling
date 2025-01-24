@@ -10,3 +10,13 @@ class Service(models.Model):
 
     def __str__(self):
         return self.service
+    
+class Testimonial(models.Model):
+    name = models.CharField(max_length=100)  # Name of the person giving the testimonial
+    message = models.TextField()  # Testimonial message
+    designation = models.CharField(max_length=100, blank=True, null=True)  # Optional designation
+    photo = models.ImageField(upload_to='testimonials/', blank=True, null=True)  # Optional photo
+    created_at = models.DateTimeField(auto_now_add=True)  # Timestamp of when the testimonial was added
+
+    def __str__(self):
+        return self.name
