@@ -20,3 +20,29 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return self.name
+    
+class TeamMember(models.Model):
+    ROLE_CHOICES = [
+        ('counselor', 'Counselor'),
+        ('manager', 'Manager'),
+        ('support', 'Support Staff'),
+        ('admin', 'Administrator'),
+    ]
+
+    name = models.CharField(max_length=100, help_text="Full name of the team member")
+    role = models.CharField(max_length=50, choices=ROLE_CHOICES, help_text="Role in the team")
+    email = models.EmailField(unique=True, help_text="Email address")
+    phone_number = models.CharField(max_length=15, help_text="Contact phone number")
+    expertise = models.TextField(blank=True, help_text="Areas of expertise or specialization")
+    qualification = models.CharField(max_length=255, blank=True, help_text="Qualifications of the team member")
+    short_description = models.TextField(blank=True, help_text="A brief description of the team member")
+    date_joined = models.DateField(auto_now_add=True, help_text="Date the team member joined")
+    is_active = models.BooleanField(default=True, help_text="Is the team member currently active?")
+
+    def __str__(self):
+        return f"{self.name} ({self.role})"
+
+    class Meta:
+        verbose_name = "Team Member"
+        verbose_name_plural = "Team Members"
+        ordering = ['name']

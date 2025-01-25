@@ -16,4 +16,5 @@ urlpatterns = [
     path('terms-service/', views.terms, name='terms'),
     path('privacy-policy/', views.privacypolicy, name='privacypolicy'),
     path('add-testimonial/', add_testimonial_view, name='add_testimonial'),
+    path('add-team-member/', views.add_team_member, name='add_team_member'),
 ]
