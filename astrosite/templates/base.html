@@ -30,13 +30,6 @@
   <!-- Main CSS File -->
   <link href='{% static "assets/css/main.css" %}' rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -60,14 +53,15 @@
             <ul>
               <li><a href="/team">Team</a></li>
               <li><a href="/testimonials">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+              <li class="dropdown"><a href="#"><span>Services</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
+                  <li><a href="#">Astrological Guidance</a></li>
+                  <li><a href="#">Psychological Counselling</a></li>
+                  <li><a href="#">Spiritual Healing</a></li>
+                  <li><a href="#">Life Skills Coaching</a></li>
+                  <li><a href="#">Relationship Counselling</a></li>
+                  <li><a href="#">Children and Parenting Counseling</a></li>
                 </ul>
               </li>
             </ul>
@@ -86,7 +80,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="/about">Get Started</a>
+      <a class="btn-getstarted" href="https://calendar.app.google/CojVy5dQp4a1WYnr5">Book Appointment</a>
 
     </div>
   </header>
@@ -131,6 +125,9 @@
 
   {% block add_testimonials %}
   {% endblock add_testimonials %}
+
+  {% block services_detail %}
+  {% endblock services_detail %}
   <!--##### pages  #####-->
 
   <footer id="footer" class="footer dark-background">

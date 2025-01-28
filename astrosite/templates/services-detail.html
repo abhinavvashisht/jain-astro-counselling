@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block pagetitle %}Services Detail{% endblock pagetitle %}
+{% block services_detail %}
+<section>
+    {% for service in services %}
+      <h1>{{ service.service}}</h1>
+    {% endfor %}
+</section>
+{% endblock services_detail %}

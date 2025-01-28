@@ -43,6 +43,10 @@ def services(request):
     services = Service.objects.all()
     return render(request, 'services.html',{'services': services})
 
+def services_detail(request):
+    services = Service.objects.all()
+    return render(request, 'services-detail.html',{'services': services})
+
 def add_testimonial_view(request):
     if request.method == 'POST':
         form = TestimonialForm(request.POST, request.FILES)
